@@ -90,6 +90,7 @@ gulp.task('images', function (done) {
   done();
 });
 
+
 // >> Copy api files
 gulp.task('api', function (done) {
   gulp.src(config.api.src).pipe(gulp.dest(config.api.dest));
@@ -237,7 +238,7 @@ gulp.task('fonts-dist', function (done) {
 gulp.task(
   'default',
   gulp.series(
-    ['clean', 'html', 'styles', 'scripts', 'images', 'api', 'icons', 'fonts', 'images'],
+    ['clean', 'html', 'styles', 'scripts', 'images', 'api', 'icons', 'fonts', 'sounds', 'images'],
     function (done) {
       browserSync.init({
         server: {
