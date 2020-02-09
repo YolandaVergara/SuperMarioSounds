@@ -31,7 +31,7 @@
     "dist": "docs/assets/sounds/"
   },
   "fonts": {
-    "src": "_src/assets/fonts/**/*.{ttf}",
+    "src": "_src/assets/fonts/**/*.{ttf,TTF}",
     "dest": "public/assets/fonts/",
     "dist": "docs/assets/fonts/"
   },
